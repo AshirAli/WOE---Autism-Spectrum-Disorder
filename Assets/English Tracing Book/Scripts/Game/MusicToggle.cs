@@ -20,7 +20,7 @@ public class MusicToggle : MonoBehaviour
 		SetImageStatus ();
 	}
 
-	private void SetImageStatus(){
+    private void SetImageStatus(){
 
 		if (AudioSources.instance.audioSources [0].mute) {
 			musicButton.sprite = musicOff;

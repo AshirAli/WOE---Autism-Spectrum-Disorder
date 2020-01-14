@@ -5,15 +5,24 @@ using UnityEngine;
 public class AudioPersistance : MonoBehaviour
 {
     static bool AudioBegin = false;
-    private AudioSource audio;
+    private AudioSource audioSource;
     void Awake()
     {
-        audio = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
         if (!AudioBegin)
         {
-            audio.Play();
+            audioSource.Play();
             DontDestroyOnLoad(gameObject);
             AudioBegin = true;
         }
+    }
+
+    public void MusicOff()
+    {
+        audioSource.mute = true;
+    }
+    public void MusicOn()
+    {
+        audioSource.mute = false;
     }
 }
