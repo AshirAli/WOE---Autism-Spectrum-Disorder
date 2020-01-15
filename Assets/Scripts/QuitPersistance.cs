@@ -21,5 +21,6 @@ public class QuitPersistance : MonoBehaviour
             options.SetActive(status);
             status = !status;
         }
+        //Debug.Log("Time: " + Time.timeScale);
     }
 }

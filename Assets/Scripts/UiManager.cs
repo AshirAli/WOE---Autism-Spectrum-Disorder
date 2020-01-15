@@ -32,7 +32,7 @@ public class UiManager : MonoBehaviour {
 
     public void Task3()
     {
-        SceneManager.LoadScene("MemoryCardGame3x3");
+        SceneManager.LoadScene("MainGame2");
 
     }
 
