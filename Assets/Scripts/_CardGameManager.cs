@@ -59,9 +59,7 @@ public class _CardGameManager : MonoBehaviour
     }
     void Start()
     {
-
-
-
+        Time.timeScale = 1;
         m_Scene = SceneManager.GetActiveScene().name;
 
         if (m_Scene == "MemoryCardGame3x3")
@@ -74,11 +72,7 @@ public class _CardGameManager : MonoBehaviour
             gameSize = 2;
 
         }
-
-
-
-
-            startButton.SetActive(true);
+        startButton.SetActive(true);
 
         gameStart = false;
         panel.SetActive(false);
@@ -95,6 +89,7 @@ public class _CardGameManager : MonoBehaviour
     // Start a game
     public void StartCardGame()
     {
+        Debug.Log("MemoryCardGame Start");
         if (gameStart) return; // return if game already running
         gameStart = true;
         // toggle UI
@@ -182,6 +177,7 @@ public class _CardGameManager : MonoBehaviour
     // Flip all cards after a short period
     IEnumerator HideFace()
     {
+
         //display for a short moment before flipping
         yield return new WaitForSeconds(0.3f);
         for (int i = 0; i < cards.Length; i++)

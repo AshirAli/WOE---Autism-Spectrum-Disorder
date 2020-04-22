@@ -149,7 +149,7 @@ public class ButtonClick : MonoBehaviour {
         }
         if (m_Scene == "NewLevel2")
         {
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("MenuScreen");
 
         }
         if (m_Scene == "Menu")

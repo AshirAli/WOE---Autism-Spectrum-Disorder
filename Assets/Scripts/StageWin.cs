@@ -15,16 +15,6 @@ public class StageWin : MonoBehaviour {
         win_panel.SetActive(false);
         Time.timeScale = 1;
 
-
-    }
-
-    // Update is called once per frame
-    void Update () {
-
-
-
-    
-    
     }
 
 
@@ -46,9 +36,6 @@ public class StageWin : MonoBehaviour {
 
             
         }
-
-
-
     }
 
 
